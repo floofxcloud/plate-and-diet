@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+ul, ol {
+    font-family: 'Winky Rough', cursive;
+}
+.navbar { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    padding: 10px 20px;
+}
+.logo {
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+    color: #fccd6f;
+    flex: 1;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    margin-right: 80px;
+}
+.nav-links li {
+    display: inline;
+}
+.nav-links a, 
+h1, h2, h3, h4, h5, h6,
+p {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.nav-links li a {
+    color: #6e3b05;
+    text-decoration: none;
+    
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+.nav-links li a:hover {
+    color: #d4924c;
+}
+.nav-links a.active {
+    border-bottom: 3px solid #fccd6f;
+}
+.profile-button {
+    margin-left: 20px;
+}
+.profile-link {
+    text-decoration: none;
+    padding: 8px 16px;
+    color: #d4924c;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.profile-icon a {
+    text-decoration: none;
+}
+.profile-icon a i {
+    color: #f0b131;
+    font-size: 25px;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+.profile-icon a i:hover {
+    color: #d4924c;
+}
+body {
+    background-color:  #e69e40eb;
+    margin: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.dish-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    margin: 20px 0;
+}
+.ingredients h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.ingredients ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.ingredients li {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+.section-title {
+    display: inline-block;
+    border: 3px solid rgb(202, 8, 8);
+    color: rgb(202, 8, 8);
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border-radius: 15px;
+    font-weight: bold;
+}
+.recipe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+}
+.recipe-text {
+    flex: 1;
+}
+.recipe-image {
+    float: right;
+    max-width: 620px;
+    margin-left: 3rem;
+    margin-right: 5rem;
+    margin-bottom: 2rem;
+}
+.recipe-image img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.nutrition-table {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0 20px 30px;
+    border-collapse: collapse;
+    font-family: 'Georgia', serif;
+    font-size: 0.95rem;
+    color: #4b3d2d;
+    background-color: #f5d3b1d4;
+    border: 1px solid #e0cdb9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .nutrition-table th,
+  .nutrition-table td {
+    border: 1px solid #e0cdb9;
+    padding: 6px 10px;
+    text-align: center;
+  }
+  
+  .nutrition-table th {
+    background-color: #fedcb296;
+    font-weight: bold;
+  }
+  .nutrition-heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+    border: 3px solid rgb(202, 8, 8);
+    color: rgb(202, 8, 8);
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border-radius: 15px;
+    font-weight: bold;
+}

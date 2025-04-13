@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+body {
+    margin: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    background-image: url("Photo8\ \(1\).JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(252, 205, 111, 0.15);
+    z-index: -1;
+}
+.navbar { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: 'Barlow Condensed' sans-serif;
+}
+.logo {
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+    color: #fccd6f;
+    flex: 1;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    margin-right: 80px;
+}
+.nav-links li {
+    display: inline;
+}
+.nav-links a, 
+h1, h2, h3, h4, h5, h6,
+p {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.nav-links li a {
+    color: #572f04;
+    text-decoration: none;
+    position: relative;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+.nav-links li a:hover {
+    color: #d4924c;
+}
+.nav-links a.active {
+    border-bottom: 3px solid #fccd6f;
+}
+.profile-button {
+    margin-left: 20px;
+}
+.profile-link {
+    text-decoration: none;
+    padding: 8px 16px;
+    color: #d4924c;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.profile-icon a {
+    text-decoration: none;
+}
+.profile-icon a i {
+    color: #f0b131;
+    font-size: 25px;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+.profile-icon a i:hover {
+    color: #d4924c;
+}
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+}
+.hero-text {
+    max-width: 50%;
+}
+.hero-text h1 {
+    font-size: 2.8em;
+    font-weight: bold;
+    line-height: 1.3;
+}
+.hero-text .highlight-orange {
+    color:#d4924c
+}
+.hero-text .highlight-yellow {
+    color: #fccd6f;
+}
+.hero-text p {
+    margin-top: 15px;
+    font-size: 1.1em;
+    color: #363333;
+}
+.explore-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background-color: #fccd6f;
+    color: #000;
+    font-weight: 600;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.explore-btn:hover {
+    background-color: #d4924c;
+    color: #fff;
+}
+.hero-image img {
+    max-width: 480px;
+    margin-left: -50px;
+    height: auto;
+}
+.top-recipes {
+    text-align: center;
+    color: #333;
+    margin: 60px 0;
+}
+.top-recipes h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+.top-recipes p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+.recipe-cards {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 960px;
+}
+.recipe-cards .card:hover {
+    transform: scale(1.0);
+
+}
+.recipe-cards .card:not(:hover) {
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+.card {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    width: 250px;
+    height: 380px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 22px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+}
+.card:hover {
+    transform:translateY(-5px)
+}
+.card img {
+    width: 100%;
+    border-radius: 12px;
+}
+.card h3 {
+    height: 48px;
+    line-height: 1.2;
+    margin: 15px 0 10px;
+    font-size: 1.3rem;
+    overflow: hidden;
+
+}
+.card p {
+    font-size: 0.95rem;
+    color: #666;
+}
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin: 0;
+    padding-left: 5px;
+}
+.rating input {
+    display: none;
+}
+.rating label {
+    font-size: 1.3rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #f5b301;
+}
+.btn {
+    display: inline-block;
+    margin-top: 0;
+    padding: 10px 18px;
+    background: #fccd6f;
+    border-radius: 8px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background o.3s;
+}
+
+.btn:hover {
+    background: #d4924c;
+    color: white;
+}
+.featured-categories {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    padding: 40px 20px;
+    color: #434242;
+  }
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 30px;
+  }
+  
+  .category-card {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 15px 5px;
+    text-decoration: none;
+    color: #4b2e10;
+    font-weight: bold;
+    font-size: 0.75rem;
+    text-align: center;
+    box-shadow: none;
+    transition: all 0.3s ease;
+  }
+  
+  .category-card span {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 4px;
+  }
+  
+  .category-card:hover {
+    transform: translateY(-2px);
+    border-color: #b58b57;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  @media (max-width: 768px) {
+    .category-grid {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .category-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .site-footer {
+    background-color: #eab57d; 
+    color: #713f0f; 
+    text-align: center;
+    padding: 10px 8px;
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    margin-top: 50px;
+  }
+  
+  .site-footer a {
+    display: block;
+    font-weight: bold;
+    color: #713f0f;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  .site-footer a:hover {
+    text-decoration: underline;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px 0 4px 0;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  
+  
+  .social-icons a {
+    color: #5a3e1b;
+    font-size: 1rem;
+    margin: 0 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #8b5e34;
+    transform: scale(1.2);
+  }
+  .social-icons a i {
+    font-size: 0.9rem;
+  }

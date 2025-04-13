@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+body {
+    background: linear-gradient(135deg, #333333, #000000);
+    background-size: 400% 400%;
+    animation: gradientAnimation 6s ease infinite;
+}
+@keyframes gradientAnimation{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.navbar { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    padding: 10px 20px;
+}
+.logo {
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+    color: #fccd6f;
+    flex: 1;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    margin-right: 80px;
+}
+.nav-links li {
+    display: inline;
+}
+.nav-links a, 
+h1, h2, h3, h4, h5, h6,
+p {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.nav-links li a {
+    color: #6e3b05;
+    text-decoration: none;
+    
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+.nav-links li a:hover {
+    color: #d4924c;
+}
+.nav-links a.active {
+    border-bottom: 3px solid #fccd6f;
+}
+.profile-button {
+    margin-left: 20px;
+}
+.profile-link {
+    text-decoration: none;
+    padding: 8px 16px;
+    color: #d4924c;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.profile-icon a {
+    text-decoration: none;
+}
+.profile-icon a i {
+    color: #f0b131;
+    font-size: 25px;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+.profile-icon a i:hover {
+    color: #d4924c;
+}
+.recipe-list {
+    text-align: center;
+    color: #333;
+    margin: 60px 0;
+}
+.recipe-list h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+.recipe-list p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+.recipe-cards {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 960px;
+}
+.recipe-cards .card:hover {
+    transform: scale(1.0);
+
+}
+.recipe-cards .card:not(:hover) {
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+.card {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    width: 250px;
+    height: 380px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 22px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+}
+.card:hover {
+    transform:translateY(-5px)
+}
+.card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.deviled-eggs {
+    height: 67%;
+}
+.cherry-pie {
+    height: 67%;
+}
+.mozzarella-sticks {
+    height: 67%;
+}
+.card h3 {
+    height: 48px;
+    line-height: 1.2;
+    margin: 15px 0 10px;
+    font-size: 1.3rem;
+    overflow: hidden;
+
+}
+.card p {
+    font-size: 0.95rem;
+    color: #383636;
+}
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin: 0;
+    padding-left: 5px;
+}
+.rating input {
+    display: none;
+}
+.rating label {
+    font-size: 1.3rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #f5b301;
+}
+.btn {
+    display: inline-block;
+    margin-top: 0;
+    padding: 10px 18px;
+    background: #fccd6f;
+    border-radius: 8px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background o.3s;
+}
+
+.btn:hover {
+    background: #d4924c;
+    color: white;
+}
+.even p {
+    font-size: 0.90rem;
+}
