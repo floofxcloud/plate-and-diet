@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add a Recipe</title>
+        <link rel="stylesheet" href="add-recipe.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+        <div class="background-overlay"></div>
+        <nav class="navbar">
+            <div class="logo">delicious</div>
+            <ul class="nav-links">
+            <li><a href="recipe.html">Home</a></li>
+       <li><a href="add-recipe.html"  class="active">Add Recipe</a></li>
+       <li><a href="recipe-list.html">Recipe List</a></li>
+            </ul>
+            <div class="profile-icon">
+                <a href="profile.html"><i class="fas fa-user-circle"></i></a>
+            </div>
+        </nav>
+        <h1>Add Your Recipe</h1>
+        <div class="form-wrapper">
+        <form class="recipe-form">
+            <label>Recipe Name:</label>
+            <input type="text" name="recipe-name">
+           
+            <label>Ingredients</label>
+            <textarea rows="4" name="ingredients"></textarea>
+            
+            <label>Instructions:</label>
+            <textarea rows="6" name="Instructions"></textarea>
+            
+            <label for="recipe-Image">Upload Recipe Image:</label>
+            <input type="file" id="recipe-Image" name="recipe-Image" accept="Image/*" required>
+            <label for="Image-url">Or Upload Recipe Image URL:</label>
+            <textarea id="Image-url" name="Image-url" rows="7" placeholder="D:\vsc assigments\assigment\index.html\turkishspaghetti.JPG"></textarea>
+            <div class="filter-category">
+            <label for="recipe-category">Category:</label>
+            <select id="recipe-category" name="recipe-category">
+                <option value="Main Course">Main Course</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Breakfast">Breakfast</option>
+                <option value="Fast food">Fast Food</option>
+                <option value="Appetizer">Appetizer</option>
+                <option value="Soup">Soup</option>
+                <option value="Dessert">Dessert</option>
+                <option value="Drinks">Drinks</option>
+                <option value="Snacks">Snacks</option>
+            </select>
+            </div>
+            <button type="submit">Add Recipe</button>
+        </form>
+        </div>
+    </body>
+</html>
